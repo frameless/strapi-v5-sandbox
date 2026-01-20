@@ -42,6 +42,17 @@
     "update-patch": "npm-check-updates --configFileName .ncurc.patch.js"
   },
   "devDependencies": {
+    "@strapi/plugin-cloud": "5.33.1",
+    "@strapi/plugin-users-permissions": "5.33.1",
+    "@strapi/strapi": "5.33.1",
+    "better-sqlite3": "12.5.0",
+    "fs-extra": "10.0.0",
+    "mime-types": "2.1.27",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-router-dom": "6.30.3",
+    "strapi-plugin-publisher": "2.0.5",
+    "styled-components": "6.2.0",
     "@changesets/cli": "2.29.8",
     "@commitlint/cli": "20.3.1",
     "@commitlint/config-conventional": "20.3.1",
