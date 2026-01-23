@@ -1,0 +1,22 @@
+{
+  "name": "@frameless/typescript-config",
+  "version": "0.0.0",
+  "private": true,
+  "license": "EUPL-1.2",
+  "author": "Frameless",
+  "description": "Frameless TypeScript configuration",
+  "repository": {
+    "type": "git+ssh",
+    "url": "git@github.com:frameless/kennisbank.git",
+    "directory": "packages/typescript-config"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "keywords": [
+    "typescript",
+    "typescript-config",
+    "typescript-eslint"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_components_utrecht_accordion_section",
+  "info": {
+    "displayName": "Uitklapper sectie",
+    "icon": "cursor",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "body": {
+      "type": "customField",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultHtml"
+      }
+    },
+    "headingLevel": {
+      "type": "integer",
+      "default": 2,
+      "max": 6,
+      "min": 2
+    }
+  }
+}

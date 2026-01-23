@@ -1,0 +1,17 @@
+{
+  "eslint.workingDirectories": [
+    {
+      "mode": "auto"
+    }
+  ],
+  "eslint.codeActionsOnSave.rules": null,
+  "editor.formatOnSave": true,
+  "eslint.useFlatConfig": true,
+  "typescript.tsdk": "node_modules/typescript/lib",
+  // "jest.virtualFolders": [
+  //   { "name": "components", "rootPath": "packages/components" },
+  //   { "name": "package2", "rootPath": "apps/website" }
+  // ],
+  "jest.jestCommandLine": "npx jest",
+  "jest.disabledWorkspaceFolders": ["node_modules"]
+}

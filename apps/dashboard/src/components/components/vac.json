@@ -1,0 +1,45 @@
+{
+  "collectionName": "components_components_vacs",
+  "info": {
+    "displayName": "vac",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "vraag": {
+      "type": "string"
+    },
+    "antwoord": {
+      "type": "component",
+      "repeatable": true,
+      "component": "components.antwoord"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": ["actief", "non-actief", "te-verwijderen"]
+    },
+    "doelgroep": {
+      "type": "enumeration",
+      "enum": ["eu-burger", "eu-bedrijf", "eu-burger-bedrijf"]
+    },
+    "uuid": {
+      "type": "customField",
+      "customField": "plugin::strapi-advanced-uuid.uuid"
+    },
+    "toelichting": {
+      "type": "customField",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultHtml"
+      }
+    },
+    "keywords": {
+      "type": "text"
+    }
+  }
+}

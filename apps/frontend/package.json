@@ -1,0 +1,32 @@
+{
+  "name": "@frameless/website",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack --port 3000",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "lint-build": "tsc --noEmit",
+    "lint-fix": "eslint . --fix",
+    "clean": "rimraf .next"
+  },
+  "dependencies": {
+    "@utrecht/component-library-css": "9.0.0",
+    "@utrecht/component-library-react": "12.0.0",
+    "@utrecht/design-tokens": "5.0.1",
+    "@utrecht/web-component-library-react": "4.0.0",
+    "graphql-request": "7.4.0",
+    "next": "16.1.4",
+    "react": "19.2.3",
+    "react-dom": "19.2.3"
+  },
+  "devDependencies": {
+    "@frameless/eslint-config": "workspace:*",
+    "@frameless/typescript-config": "workspace:*",
+    "@types/node": "24.10.9",
+    "@types/react": "19.2.9",
+    "@types/react-dom": "19.2.3",
+    "typescript": "5.9.3"
+  }
+}

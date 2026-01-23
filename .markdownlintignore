@@ -1,0 +1,8 @@
+node_modules
+dist
+CHANGELOG.md
+.next
+.strapi
+.tmp
+.turbo
+_*.md

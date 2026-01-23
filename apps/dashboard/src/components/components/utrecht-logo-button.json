@@ -1,0 +1,46 @@
+{
+  "collectionName": "components_components_utrecht-logo_buttons",
+  "info": {
+    "displayName": "Call to Action knop (CTA)",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "href": {
+      "type": "string",
+      "required": false
+    },
+    "textContent": {
+      "type": "string",
+      "required": false
+    },
+    "logo": {
+      "type": "enumeration",
+      "enum": ["digid", "eherkenning", "eidas", "without_logo"],
+      "default": "without_logo"
+    },
+    "appearance": {
+      "type": "enumeration",
+      "enum": ["primary-action-button", "secondary-action-button", "magenta"],
+      "default": "primary-action-button"
+    },
+    "kennisartikelCategorie": {
+      "type": "enumeration",
+      "enum": [
+        "inleiding",
+        "aanvraag",
+        "bewijs",
+        "voorwaarden",
+        "bezwaar",
+        "kosten",
+        "termijn",
+        "wat te doen bij geen reactie",
+        "bijzonderheden",
+        "contact"
+      ]
+    }
+  }
+}

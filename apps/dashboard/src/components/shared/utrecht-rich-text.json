@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_components_utrecht_rich_text_1",
+  "info": {
+    "displayName": "Contentblok",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "content": {
+      "type": "customField",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultHtml"
+      }
+    },
+    "kennisartikelCategorie": {
+      "type": "enumeration",
+      "enum": [
+        "inleiding",
+        "aanvraag",
+        "bewijs",
+        "voorwaarden",
+        "bezwaar",
+        "kosten",
+        "termijn",
+        "wat te doen bij geen reactie",
+        "bijzonderheden",
+        "contact"
+      ],
+      "required": false
+    }
+  }
+}

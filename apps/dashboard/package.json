@@ -1,0 +1,54 @@
+{
+  "name": "@frameless/dashboard",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A Strapi application",
+  "scripts": {
+    "build": "strapi build",
+    "console": "strapi console",
+    "deploy": "strapi deploy",
+    "dev": "strapi develop",
+    "develop": "strapi develop",
+    "seed:example": "node ./scripts/seed.js",
+    "start": "strapi start",
+    "strapi": "strapi",
+    "upgrade": "npx @strapi/upgrade latest",
+    "upgrade:dry": "npx @strapi/upgrade latest --dry",
+    "lint": "eslint .",
+    "lint-build": "tsc --noEmit",
+    "lint-fix": "eslint . --fix",
+    "clean": "rimraf .next .strapi dist"
+  },
+  "dependencies": {
+    "@_sh/strapi-plugin-ckeditor": "6.0.3",
+    "@frameless/preview-button": "workspace:*",
+    "@strapi/design-system": "2.1.2",
+    "@strapi/plugin-graphql": "5.33.4",
+    "@strapi/plugin-users-permissions": "5.33.4",
+    "@strapi/strapi": "5.33.4",
+    "better-sqlite3": "12.6.2",
+    "mime-types": "3.0.2",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-router-dom": "6.30.3",
+    "strapi-advanced-uuid": "2.1.1",
+    "styled-components": "6.3.8"
+  },
+  "devDependencies": {
+    "@frameless/eslint-config": "workspace:*",
+    "@frameless/typescript-config": "workspace:*",
+    "@types/node": "24.10.9",
+    "@types/react": "18",
+    "@types/react-dom": "18",
+    "typescript": "5.9.3"
+  },
+  "engines": {
+    "node": ">=20.0.0 <=24.x.x",
+    "pnpm": "10.23.0"
+  },
+  "strapi": {
+    "uuid": "3d692e85-9daa-44f1-8d6e-d3d4a35f8540",
+    "installId": "b2e07b10a83b64073a01442377742cb165ebd0b63949dd0dc9620074f5c8ad36"
+  },
+  "packageManager": "pnpm@10.23.0+sha512.21c4e5698002ade97e4efe8b8b4a89a8de3c85a37919f957e7a0f30f38fbc5bbdd05980ffe29179b2fb6e6e691242e098d945d1601772cad0fef5fb6411e2a4b"
+}

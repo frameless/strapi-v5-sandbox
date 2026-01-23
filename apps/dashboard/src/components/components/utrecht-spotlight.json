@@ -1,0 +1,47 @@
+{
+  "collectionName": "components_components_utrecht_spotlight",
+  "info": {
+    "displayName": "Spotlight",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "content": {
+      "type": "customField",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultHtml"
+      }
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": ["gray", "info", "warning"],
+      "default": "gray"
+    },
+    "logoButton": {
+      "type": "component",
+      "repeatable": true,
+      "component": "components.utrecht-logo-button"
+    },
+    "kennisartikelCategorie": {
+      "type": "enumeration",
+      "enum": [
+        "inleiding",
+        "aanvraag",
+        "bewijs",
+        "voorwaarden",
+        "bezwaar",
+        "kosten",
+        "termijn",
+        "wat te doen bij geen reactie",
+        "bijzonderheden",
+        "contact"
+      ]
+    }
+  }
+}

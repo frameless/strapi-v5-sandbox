@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_components_internal_fields",
+  "info": {
+    "displayName": "Internal field",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "contentBlock": {
+      "type": "component",
+      "repeatable": true,
+      "component": "components.utrecht-rich-text",
+      "required": false
+    },
+    "keywords": {
+      "type": "text"
+    }
+  }
+}

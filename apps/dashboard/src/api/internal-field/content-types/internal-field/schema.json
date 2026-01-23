@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "internal_fields",
+  "info": {
+    "singularName": "internal-field",
+    "pluralName": "internal-fields",
+    "displayName": "Interne informatie",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "required": true
+    },
+    "content": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "components.internal-field",
+      "repeatable": false
+    },
+    "product": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::product.product"
+    },
+    "contact_information_public": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::contact-information-public.contact-information-public",
+      "inversedBy": "internal_information"
+    },
+    "contact_information_internal": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::contact-information-internal.contact-information-internal",
+      "mappedBy": "internal_information"
+    }
+  }
+}

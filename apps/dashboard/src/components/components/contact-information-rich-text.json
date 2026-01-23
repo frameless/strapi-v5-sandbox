@@ -1,0 +1,21 @@
+{
+  "collectionName": "contact_info_rich_text",
+  "info": {
+    "displayName": "Inhoud"
+  },
+  "options": {},
+  "attributes": {
+    "content": {
+      "type": "customField",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultHtml"
+      }
+    }
+  }
+}

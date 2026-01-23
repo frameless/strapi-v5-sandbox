@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "additional_informations",
+  "info": {
+    "singularName": "additional-information",
+    "pluralName": "additional-informations",
+    "displayName": "Aanvullende informatie ",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "required": true
+    },
+    "content": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "components.additional-information-field",
+      "repeatable": false
+    },
+    "product": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::product.product",
+      "inversedBy": "additional_information"
+    }
+  }
+}
