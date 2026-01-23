@@ -1,0 +1,12 @@
+<!-- Ignore 3rd party files -->
+
+node_modules/
+
+<!-- Ignore generated files -->
+
+coverage/
+dist/
+tmp/
+build/
+sample
+.cache

@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_components_multi_columns_buttons",
+  "info": {
+    "displayName": "Meerdere Call to Action knoppen (CTA)"
+  },
+  "options": {},
+  "attributes": {
+    "kennisartikelCategorie": {
+      "type": "enumeration",
+      "enum": [
+        "inleiding",
+        "aanvraag",
+        "bewijs",
+        "voorwaarden",
+        "bezwaar",
+        "kosten",
+        "termijn",
+        "wat te doen bij geen reactie",
+        "bijzonderheden",
+        "contact"
+      ]
+    },
+    "column": {
+      "type": "component",
+      "repeatable": true,
+      "component": "components.utrecht-multi-columns-button-item"
+    }
+  }
+}

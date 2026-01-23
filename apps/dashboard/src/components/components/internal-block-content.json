@@ -1,0 +1,15 @@
+{
+  "collectionName": "internal_block_contents",
+  "info": {
+    "displayName": "Interne informatie",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "internal_field": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::internal-field.internal-field"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "$schema": "https://turborepo.com/schema.json",
+  "globalEnv": ["FRONTEND_PUBLIC_URL", "FRONTEND_PUBLIC_URL", "PREVIEW_SECRET_TOKEN", "NODE_ENV", "DEBUG"],
+  "ui": "tui",
+  "tasks": {
+    "build": {
+      "dependsOn": ["^build"],
+      "inputs": ["$TURBO_DEFAULT$", ".env*"],
+      "outputs": [".next/**", "!.next/cache/**", ".strapi/**", "./dist"]
+    },
+    "lint": {
+      "dependsOn": ["^lint"]
+    },
+    "lint-fix": {
+      "dependsOn": ["^lint-build"]
+    },
+    "dev": {
+      "cache": false,
+      "persistent": true
+    },
+    "start": {
+      "cache": false,
+      "persistent": true
+    },
+    "lint-build": {
+      "dependsOn": ["^lint-build"],
+      "inputs": ["$TURBO_DEFAULT$", ".env*"],
+      "outputs": []
+    },
+    "clean": {
+      "cache": false,
+      "persistent": true,
+      "outputs": ["./.next", "./dist", "./.strapi"]
+    }
+  }
+}

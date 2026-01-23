@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_components_additional_information_field",
+  "info": {
+    "displayName": "Aanvullende informatie"
+  },
+  "options": {},
+  "attributes": {
+    "contentBlock": {
+      "type": "component",
+      "repeatable": true,
+      "component": "components.contact-information-rich-text",
+      "required": false
+    }
+  }
+}

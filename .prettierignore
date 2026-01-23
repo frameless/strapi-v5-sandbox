@@ -1,0 +1,20 @@
+# Ignore 3rd party files
+node_modules
+
+# Ignore minified files
+*.min.js
+
+# Ignore generated files
+patches
+dist
+build
+.tmp
+.cache
+.cache-loader
+.next
+.strapi
+.turbo
+CHANGELOG.md
+pnpm-lock.yaml
+.strapi-updater.json
+apps/dashboard/types/generated/*

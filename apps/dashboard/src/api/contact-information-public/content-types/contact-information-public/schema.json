@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contact_info_public",
+  "info": {
+    "singularName": "contact-information-public",
+    "pluralName": "contact-information-publics",
+    "displayName": "Contactinformatie (openbaar)",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "contentBlock": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "components.contact-information-rich-text",
+      "repeatable": true
+    },
+    "internal_information": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::internal-field.internal-field",
+      "mappedBy": "contact_information_public"
+    },
+    "vacs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::vac.vac",
+      "mappedBy": "contact_information_public"
+    },
+    "products": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product.product",
+      "mappedBy": "contact_information_public"
+    }
+  }
+}

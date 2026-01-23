@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_components_utrecht_accordion",
+  "info": {
+    "displayName": "Uitklapmenu",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "kennisartikelCategorie": {
+      "type": "enumeration",
+      "enum": [
+        "inleiding",
+        "aanvraag",
+        "bewijs",
+        "voorwaarden",
+        "bezwaar",
+        "kosten",
+        "termijn",
+        "wat te doen bij geen reactie",
+        "bijzonderheden",
+        "contact"
+      ]
+    },
+    "item": {
+      "type": "component",
+      "repeatable": true,
+      "component": "components.utrecht-accordion-section"
+    }
+  }
+}
