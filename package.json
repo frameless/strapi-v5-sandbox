@@ -34,13 +34,22 @@
     "lint-fix:md": "markdownlint --fix '**/*.md'",
     "lint-fix:prettier": "prettier --write .",
     "lint-fix": "turbo run lint-fix",
-    "prepare": "husky"
+    "prepare": "husky",
+    "publish": "changeset publish",
+    "publish:changeset": "changeset publish",
+    "update-major": "npm-check-updates --configFileName .ncurc.major.js",
+    "update-minor": "npm-check-updates --configFileName .ncurc.minor.js",
+    "update-patch": "npm-check-updates --configFileName .ncurc.patch.js"
   },
   "devDependencies": {
+    "@changesets/cli": "2.29.8",
+    "@commitlint/cli": "20.3.1",
+    "@commitlint/config-conventional": "20.3.1",
     "eslint-plugin-json": "4.0.1",
     "husky": "9.1.7",
     "lint-staged": "16.2.7",
     "markdownlint-cli": "0.47.0",
+    "npm-check-updates": "19.3.1",
     "npm-package-json-lint": "9.1.0",
     "npm-run-all": "4.1.5",
     "prettier": "3.8.1",
