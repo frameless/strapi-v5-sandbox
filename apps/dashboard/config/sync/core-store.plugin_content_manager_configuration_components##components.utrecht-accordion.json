@@ -1,0 +1,86 @@
+{
+  "key": "plugin_content_manager_configuration_components::components.utrecht-accordion",
+  "value": {
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "documentId",
+      "defaultSortBy": "documentId",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "kennisartikelCategorie": {
+        "edit": {
+          "label": "kennisartikelCategorie",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "kennisartikelCategorie",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "item": {
+        "edit": {
+          "label": "item",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "item",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "documentId": {
+        "edit": {},
+        "list": {
+          "label": "documentId",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "kennisartikelCategorie",
+        "item"
+      ],
+      "edit": [
+        [
+          {
+            "name": "kennisartikelCategorie",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "item",
+            "size": 12
+          }
+        ]
+      ]
+    },
+    "uid": "components.utrecht-accordion",
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

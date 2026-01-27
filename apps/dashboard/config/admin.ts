@@ -56,4 +56,5 @@ export default ({ env }) => ({
       },
     },
   },
+  watchIgnoreFiles: ['**/config/sync/**'],
 });

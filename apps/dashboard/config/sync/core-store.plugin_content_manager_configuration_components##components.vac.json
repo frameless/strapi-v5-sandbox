@@ -1,0 +1,185 @@
+{
+  "key": "plugin_content_manager_configuration_components::components.vac",
+  "value": {
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "vraag",
+      "defaultSortBy": "vraag",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "vraag": {
+        "edit": {
+          "label": "vraag",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "vraag",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "antwoord": {
+        "edit": {
+          "label": "antwoord",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "antwoord",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "status": {
+        "edit": {
+          "label": "status",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "status",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "doelgroep": {
+        "edit": {
+          "label": "doelgroep",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "doelgroep",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "uuid": {
+        "edit": {
+          "label": "uuid",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "uuid",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "toelichting": {
+        "edit": {
+          "label": "toelichting",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "toelichting",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "keywords": {
+        "edit": {
+          "label": "keywords",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "keywords",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "documentId": {
+        "edit": {},
+        "list": {
+          "label": "documentId",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "vraag",
+        "antwoord",
+        "status"
+      ],
+      "edit": [
+        [
+          {
+            "name": "vraag",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "antwoord",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "status",
+            "size": 6
+          },
+          {
+            "name": "doelgroep",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "uuid",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "toelichting",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "keywords",
+            "size": 6
+          }
+        ]
+      ]
+    },
+    "uid": "components.vac",
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

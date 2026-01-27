@@ -1,0 +1,123 @@
+{
+  "key": "plugin_content_manager_configuration_components::components.utrecht-link",
+  "value": {
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "textContent",
+      "defaultSortBy": "textContent",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "textContent": {
+        "edit": {
+          "label": "textContent",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "textContent",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "href": {
+        "edit": {
+          "label": "href",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "href",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "icon": {
+        "edit": {
+          "label": "icon",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "icon",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "kennisartikelCategorie": {
+        "edit": {
+          "label": "kennisartikelCategorie",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "kennisartikelCategorie",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "documentId": {
+        "edit": {},
+        "list": {
+          "label": "documentId",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "textContent",
+        "href",
+        "icon"
+      ],
+      "edit": [
+        [
+          {
+            "name": "textContent",
+            "size": 6
+          },
+          {
+            "name": "href",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "icon",
+            "size": 6
+          },
+          {
+            "name": "kennisartikelCategorie",
+            "size": 6
+          }
+        ]
+      ]
+    },
+    "uid": "components.utrecht-link",
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}
