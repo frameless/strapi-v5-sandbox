@@ -63,7 +63,7 @@ export default ({ env }) => ({
 
       normalize: [
         [/\/(?:[a-z0-9]{24,25}|\d+)(?=\/|$)/, '/:id'],
-        [/\/uploads\/[^\/]+\.[a-zA-Z0-9]+/, '/uploads/:file'],
+        [/\/uploads\/[^\\/]+\.[a-zA-Z0-9]+/, '/uploads/:file'],
       ],
     },
   },
