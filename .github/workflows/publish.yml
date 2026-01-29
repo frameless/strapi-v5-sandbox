@@ -207,6 +207,6 @@ jobs:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         with:
           commit: "docs(release): Strapi v5 extensions packages"
-          setupGitUser: false
+          setupGitUser: true
           title: "docs(release): Strapi v5 extensions packages"
           publish: "pnpm run publish:changeset"
