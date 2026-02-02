@@ -1,4 +1,10 @@
 export default ({ env }) => ({
+  'env-label': {
+    enabled: true,
+    config: {
+      env_label: env('STRAPI_ENV_LABEL'),
+    },
+  },
   'preview-button': {
     enabled: true,
     config: {
