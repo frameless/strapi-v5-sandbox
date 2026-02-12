@@ -364,77 +364,6 @@
       "locale": null
     },
     {
-      "documentId": "ugw27svccymmtp5oqvz7yo5i",
-      "action": "plugin::content-manager.explorer.create",
-      "actionParameters": {},
-      "subject": "api::price.price",
-      "properties": {
-        "fields": [
-          "price.label",
-          "price.currency",
-          "price.value",
-          "price.uuid",
-          "title",
-          "products"
-        ]
-      },
-      "conditions": [
-        "admin::is-creator"
-      ],
-      "locale": null
-    },
-    {
-      "documentId": "dlnl0bjppag6u8a72seqcm7j",
-      "action": "plugin::content-manager.explorer.delete",
-      "actionParameters": {},
-      "subject": "api::price.price",
-      "properties": {},
-      "conditions": [
-        "admin::is-creator"
-      ],
-      "locale": null
-    },
-    {
-      "documentId": "h75ufbuwmh5nx2iqm04yykm1",
-      "action": "plugin::content-manager.explorer.read",
-      "actionParameters": {},
-      "subject": "api::price.price",
-      "properties": {
-        "fields": [
-          "price.label",
-          "price.currency",
-          "price.value",
-          "price.uuid",
-          "title",
-          "products"
-        ]
-      },
-      "conditions": [
-        "admin::is-creator"
-      ],
-      "locale": null
-    },
-    {
-      "documentId": "ryrohj8aevm8edmmc9b5v7vm",
-      "action": "plugin::content-manager.explorer.update",
-      "actionParameters": {},
-      "subject": "api::price.price",
-      "properties": {
-        "fields": [
-          "price.label",
-          "price.currency",
-          "price.value",
-          "price.uuid",
-          "title",
-          "products"
-        ]
-      },
-      "conditions": [
-        "admin::is-creator"
-      ],
-      "locale": null
-    },
-    {
       "documentId": "h5x9kmvpki3pkwd5vks2950w",
       "action": "plugin::content-manager.explorer.create",
       "actionParameters": {},
@@ -446,7 +375,6 @@
           "content.content",
           "content.kennisartikelCategorie",
           "sections",
-          "price",
           "metaTags.keymatch",
           "metaTags.title",
           "metaTags.description",
@@ -472,7 +400,6 @@
           "content.content",
           "content.kennisartikelCategorie",
           "sections",
-          "price",
           "metaTags.keymatch",
           "metaTags.title",
           "metaTags.description",
@@ -498,7 +425,6 @@
           "content.content",
           "content.kennisartikelCategorie",
           "sections",
-          "price",
           "metaTags.keymatch",
           "metaTags.title",
           "metaTags.description",

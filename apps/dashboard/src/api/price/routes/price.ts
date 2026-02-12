@@ -1,8 +1,7 @@
-
 /**
  * price router
  */
 
 import { factories } from '@strapi/strapi';
 
-export default factories.createCoreController('api::price.price');
+export default factories.createCoreRouter('api::price.price');

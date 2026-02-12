@@ -1,0 +1,150 @@
+{
+  "name": "@frameless/strapi-tiptap-editor",
+  "version": "0.3.2",
+  "description": "A drop-in replacement for the strapi editor",
+  "strapi": {
+    "name": "strapi-tiptap-editor",
+    "displayName": "Strapi TipTap Editor",
+    "description": "A drop-in replacement for the strapi editor",
+    "kind": "plugin"
+  },
+  "sideEffects": [
+    "**/*.css",
+    "**/*.scss",
+    "./dist/style.css"
+  ],
+  "repository": {
+    "type": "git+ssh",
+    "url": "git@github.com:frameless/strapi.git",
+    "directory": "packages/strapi-tiptap-editor"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public",
+    "provenance": true
+  },
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    "./package.json": "./package.json",
+    "./strapi-admin": {
+      "types": "./dist/admin/index.d.ts",
+      "source": "./admin/src/index.tsx",
+      "import": "./dist/admin/index.mjs",
+      "require": "./dist/admin/index.js",
+      "default": "./dist/admin/index.js"
+    },
+    "./strapi-server": {
+      "types": "./dist/server/index.d.ts",
+      "source": "./server/index.ts",
+      "import": "./dist/server/index.mjs",
+      "require": "./dist/server/index.js",
+      "default": "./dist/server/index.js"
+    }
+  },
+  "keywords": [
+    "strapi",
+    "tiptap",
+    "editor"
+  ],
+  "author": "@frameless",
+  "license": "EUPL-1.2",
+  "dependencies": {
+    "@cospired/i18n-iso-languages": "4.2.0",
+    "@floating-ui/react": "0.27.17",
+    "@tanstack/react-query": "5.90.20",
+    "@tiptap/core": "2.27.2",
+    "@tiptap/extension-blockquote": "2.27.2",
+    "@tiptap/extension-bold": "2.27.2",
+    "@tiptap/extension-bullet-list": "2.27.2",
+    "@tiptap/extension-character-count": "2.27.2",
+    "@tiptap/extension-code": "2.27.2",
+    "@tiptap/extension-code-block": "2.27.2",
+    "@tiptap/extension-color": "2.27.2",
+    "@tiptap/extension-details": "2.27.2",
+    "@tiptap/extension-details-content": "2.27.2",
+    "@tiptap/extension-details-summary": "2.27.2",
+    "@tiptap/extension-document": "2.27.2",
+    "@tiptap/extension-gapcursor": "2.27.2",
+    "@tiptap/extension-hard-break": "2.27.2",
+    "@tiptap/extension-heading": "2.27.2",
+    "@tiptap/extension-highlight": "2.27.2",
+    "@tiptap/extension-history": "2.27.2",
+    "@tiptap/extension-horizontal-rule": "2.27.2",
+    "@tiptap/extension-image": "2.27.2",
+    "@tiptap/extension-italic": "2.27.2",
+    "@tiptap/extension-link": "2.27.2",
+    "@tiptap/extension-list-item": "2.27.2",
+    "@tiptap/extension-ordered-list": "2.27.2",
+    "@tiptap/extension-paragraph": "2.27.2",
+    "@tiptap/extension-placeholder": "2.27.2",
+    "@tiptap/extension-strike": "2.27.2",
+    "@tiptap/extension-table": "2.27.2",
+    "@tiptap/extension-table-cell": "2.27.2",
+    "@tiptap/extension-table-header": "2.27.2",
+    "@tiptap/extension-table-row": "2.27.1",
+    "@tiptap/extension-text": "2.27.2",
+    "@tiptap/extension-text-align": "2.27.2",
+    "@tiptap/extension-text-style": "2.27.2",
+    "@tiptap/extension-underline": "2.27.2",
+    "@tiptap/extension-youtube": "2.27.2",
+    "@tiptap/pm": "2.27.2",
+    "@tiptap/react": "2.27.1",
+    "@tiptap/starter-kit": "2.27.2",
+    "@utrecht/component-library-css": "9.0.0",
+    "@utrecht/component-library-react": "12.0.0",
+    "@utrecht/design-tokens": "5.0.1",
+    "classnames": "2.5.1",
+    "dompurify": "3.3.1",
+    "lodash.truncate": "4.4.2",
+    "prosemirror-utils": "1.2.2",
+    "react-icons": "5.5.0",
+    "react-intl": "8.1.1",
+    "react-router-dom": "6.30.3",
+    "slugify": "1.6.6",
+    "styled-components": "6.3.8",
+    "uuid": "13.0.0"
+  },
+  "devDependencies": {
+    "@frameless/eslint-config": "workspace:*",
+    "@frameless/typescript-config": "workspace:*",
+    "@strapi/design-system": "2.1.2",
+    "@strapi/icons": "2.1.2",
+    "@strapi/typescript-utils": "5.33.4",
+    "@types/jest": "29.5.14",
+    "@types/lodash.truncate": "4.4.9",
+    "@types/node": "24.10.9",
+    "@types/react-router-dom": "5.3.3",
+    "@types/styled-components": "5.1.36",
+    "@types/uuid": "11.0.0",
+    "jest": "29.7.0",
+    "sass": "1.97.3",
+    "sass-embedded": "1.97.3",
+    "ts-jest": "29.2.6",
+    "ts-node": "10.9.2"
+  },
+  "peerDependencies": {
+    "@strapi/design-system": ">=2.0.0",
+    "@strapi/icons": ">=2.0.0",
+    "@strapi/strapi": ">=5.0.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "engines": {
+    "node": ">=22.0.0 <25",
+    "pnpm": ">=10.0.0"
+  },
+  "scripts": {
+    "build": "strapi-plugin build",
+    "watch": "strapi-plugin watch",
+    "watch:link": "strapi-plugin watch:link",
+    "verify": "strapi-plugin verify",
+    "lint-build": "tsc --noEmit -p tsconfig.json && tsc --noEmit -p tsconfig.server.json",
+    "lint": "eslint .",
+    "lint-fix": "eslint . --fix",
+    "test:ts:front": "run -T tsc -p tsconfig.json",
+    "test:ts:back": "run -T tsc -p tsconfig.server.json",
+    "clean": "rimraf .next .strapi dist"
+  }
+}

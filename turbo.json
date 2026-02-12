@@ -1,6 +1,13 @@
 {
   "$schema": "https://turborepo.com/schema.json",
-  "globalEnv": ["FRONTEND_PUBLIC_URL", "FRONTEND_PUBLIC_URL", "PREVIEW_SECRET_TOKEN", "NODE_ENV", "DEBUG"],
+  "globalEnv": [
+    "FRONTEND_PUBLIC_URL",
+    "FRONTEND_PUBLIC_URL",
+    "PREVIEW_SECRET_TOKEN",
+    "NODE_ENV",
+    "DEBUG",
+    "STRAPI_ADMIN_BACKEND_URL"
+  ],
   "ui": "tui",
   "tasks": {
     "build": {

@@ -342,78 +342,6 @@
       "locale": null
     },
     {
-      "documentId": "hviwxf8magjjdgdeqa7qnf4i",
-      "action": "plugin::content-manager.explorer.create",
-      "actionParameters": {},
-      "subject": "api::price.price",
-      "properties": {
-        "fields": [
-          "price.label",
-          "price.currency",
-          "price.value",
-          "price.uuid",
-          "title",
-          "products"
-        ]
-      },
-      "conditions": [],
-      "locale": null
-    },
-    {
-      "documentId": "h7m4r1ys2kzy18xwuo1xxros",
-      "action": "plugin::content-manager.explorer.delete",
-      "actionParameters": {},
-      "subject": "api::price.price",
-      "properties": {},
-      "conditions": [],
-      "locale": null
-    },
-    {
-      "documentId": "sdxextweze62cdggo5xpdl7b",
-      "action": "plugin::content-manager.explorer.publish",
-      "actionParameters": {},
-      "subject": "api::price.price",
-      "properties": {},
-      "conditions": [],
-      "locale": null
-    },
-    {
-      "documentId": "g6eheqbuxylaif7vj9m5vgf0",
-      "action": "plugin::content-manager.explorer.read",
-      "actionParameters": {},
-      "subject": "api::price.price",
-      "properties": {
-        "fields": [
-          "price.label",
-          "price.currency",
-          "price.value",
-          "price.uuid",
-          "title",
-          "products"
-        ]
-      },
-      "conditions": [],
-      "locale": null
-    },
-    {
-      "documentId": "zv44ejzyldtk4117f5lcv82a",
-      "action": "plugin::content-manager.explorer.update",
-      "actionParameters": {},
-      "subject": "api::price.price",
-      "properties": {
-        "fields": [
-          "price.label",
-          "price.currency",
-          "price.value",
-          "price.uuid",
-          "title",
-          "products"
-        ]
-      },
-      "conditions": [],
-      "locale": null
-    },
-    {
       "documentId": "g61y5tsreh44xhdkzaw1rckx",
       "action": "plugin::content-manager.explorer.create",
       "actionParameters": {},
@@ -425,7 +353,6 @@
           "content.content",
           "content.kennisartikelCategorie",
           "sections",
-          "price",
           "metaTags.keymatch",
           "metaTags.title",
           "metaTags.description",
@@ -449,7 +376,6 @@
           "content.content",
           "content.kennisartikelCategorie",
           "sections",
-          "price",
           "metaTags.keymatch",
           "metaTags.title",
           "metaTags.description",
@@ -473,7 +399,6 @@
           "content.content",
           "content.kennisartikelCategorie",
           "sections",
-          "price",
           "metaTags.keymatch",
           "metaTags.title",
           "metaTags.description",
