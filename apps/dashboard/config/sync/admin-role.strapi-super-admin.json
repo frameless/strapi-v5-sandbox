@@ -390,7 +390,7 @@
       "locale": null
     },
     {
-      "documentId": "cyd2e1ygqfasb32i3unr8h14",
+      "documentId": "mjs161k24vk7mptygy3q9iqr",
       "action": "plugin::content-manager.explorer.create",
       "actionParameters": {},
       "subject": "api::internal-field.internal-field",
@@ -399,6 +399,7 @@
           "title",
           "content.contentBlock.content",
           "content.contentBlock.kennisartikelCategorie",
+          "content.contentBlock.label",
           "content.keywords",
           "product",
           "contact_information_public",
@@ -438,7 +439,7 @@
       "locale": null
     },
     {
-      "documentId": "u9d2rdfw1f7ry9ydq50vpeva",
+      "documentId": "keq0u88q0okqahbhyeua2dc7",
       "action": "plugin::content-manager.explorer.read",
       "actionParameters": {},
       "subject": "api::internal-field.internal-field",
@@ -447,6 +448,7 @@
           "title",
           "content.contentBlock.content",
           "content.contentBlock.kennisartikelCategorie",
+          "content.contentBlock.label",
           "content.keywords",
           "product",
           "contact_information_public",
@@ -460,7 +462,7 @@
       "locale": null
     },
     {
-      "documentId": "mw5b4zz4pafpdjv6fogchlsk",
+      "documentId": "v16y25vnma5dc2h2l0yyaqmc",
       "action": "plugin::content-manager.explorer.update",
       "actionParameters": {},
       "subject": "api::internal-field.internal-field",
@@ -469,6 +471,7 @@
           "title",
           "content.contentBlock.content",
           "content.contentBlock.kennisartikelCategorie",
+          "content.contentBlock.label",
           "content.keywords",
           "product",
           "contact_information_public",
@@ -482,25 +485,26 @@
       "locale": null
     },
     {
-      "documentId": "fwjx3sqp6ny9h8sr3p9mpxi1",
+      "documentId": "g5ltoctqmlafu2ryai9weskn",
       "action": "plugin::content-manager.explorer.create",
       "actionParameters": {},
       "subject": "api::price.price",
       "properties": {
         "fields": [
+          "title",
           "price.label",
           "price.currency",
           "price.value",
           "price.uuid",
-          "title",
-          "products"
+          "products",
+          "uuid"
         ]
       },
       "conditions": [],
       "locale": null
     },
     {
-      "documentId": "qay31b2x57m4ktik2rpkvz7l",
+      "documentId": "g5sia6kq78imbhbadzfmudjc",
       "action": "plugin::content-manager.explorer.delete",
       "actionParameters": {},
       "subject": "api::price.price",
@@ -509,7 +513,7 @@
       "locale": null
     },
     {
-      "documentId": "ajqxk7xrx22rglbn61jt9kwj",
+      "documentId": "ar2em1veqlj9pgtnzfb26gzj",
       "action": "plugin::content-manager.explorer.publish",
       "actionParameters": {},
       "subject": "api::price.price",
@@ -518,43 +522,45 @@
       "locale": null
     },
     {
-      "documentId": "i82l93pa5l04mw18tvx8qhpi",
+      "documentId": "rblddf3z6wk86rxmh6mr1ug7",
       "action": "plugin::content-manager.explorer.read",
       "actionParameters": {},
       "subject": "api::price.price",
       "properties": {
         "fields": [
+          "title",
           "price.label",
           "price.currency",
           "price.value",
           "price.uuid",
-          "title",
-          "products"
+          "products",
+          "uuid"
         ]
       },
       "conditions": [],
       "locale": null
     },
     {
-      "documentId": "cb6e5tlcvglrhcjy9atltmmc",
+      "documentId": "x6pz1sqac4maa5dsxoe4med9",
       "action": "plugin::content-manager.explorer.update",
       "actionParameters": {},
       "subject": "api::price.price",
       "properties": {
         "fields": [
+          "title",
           "price.label",
           "price.currency",
           "price.value",
           "price.uuid",
-          "title",
-          "products"
+          "products",
+          "uuid"
         ]
       },
       "conditions": [],
       "locale": null
     },
     {
-      "documentId": "owj2cdl9dg5xy5n8dm8ssjec",
+      "documentId": "bno3xdrll6tbvspvoo4euplo",
       "action": "plugin::content-manager.explorer.create",
       "actionParameters": {},
       "subject": "api::product.product",
@@ -564,14 +570,15 @@
           "slug",
           "content.content",
           "content.kennisartikelCategorie",
+          "content.label",
           "sections",
-          "price",
           "metaTags.keymatch",
           "metaTags.title",
           "metaTags.description",
           "metaTags.ogImage",
           "additional_information",
-          "contact_information_public"
+          "contact_information_public",
+          "price"
         ],
         "locales": [
           "en"
@@ -607,7 +614,7 @@
       "locale": null
     },
     {
-      "documentId": "c7zpl42pz1g3xmrm3tw2n67p",
+      "documentId": "c1sxd1je57v9hacfyibf9144",
       "action": "plugin::content-manager.explorer.read",
       "actionParameters": {},
       "subject": "api::product.product",
@@ -617,14 +624,15 @@
           "slug",
           "content.content",
           "content.kennisartikelCategorie",
+          "content.label",
           "sections",
-          "price",
           "metaTags.keymatch",
           "metaTags.title",
           "metaTags.description",
           "metaTags.ogImage",
           "additional_information",
-          "contact_information_public"
+          "contact_information_public",
+          "price"
         ],
         "locales": [
           "en"
@@ -634,7 +642,7 @@
       "locale": null
     },
     {
-      "documentId": "po6fs6jze81jdencz2rfvani",
+      "documentId": "wwll9alq7htllmkyvba51qn7",
       "action": "plugin::content-manager.explorer.update",
       "actionParameters": {},
       "subject": "api::product.product",
@@ -644,14 +652,15 @@
           "slug",
           "content.content",
           "content.kennisartikelCategorie",
+          "content.label",
           "sections",
-          "price",
           "metaTags.keymatch",
           "metaTags.title",
           "metaTags.description",
           "metaTags.ogImage",
           "additional_information",
-          "contact_information_public"
+          "contact_information_public",
+          "price"
         ],
         "locales": [
           "en"
@@ -1027,6 +1036,87 @@
       "locale": null
     },
     {
+      "documentId": "nofoanygs6dbdp9dz5yx06xz",
+      "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
+      "subject": "plugin::users-permissions.user",
+      "properties": {
+        "fields": [
+          "username",
+          "email",
+          "provider",
+          "password",
+          "resetPasswordToken",
+          "confirmationToken",
+          "confirmed",
+          "blocked",
+          "role"
+        ]
+      },
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "wivg8u8fj821m67n4zv2sdus",
+      "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
+      "subject": "plugin::users-permissions.user",
+      "properties": {},
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "im7w3449t7ng9690m3ohy5dx",
+      "action": "plugin::content-manager.explorer.publish",
+      "actionParameters": {},
+      "subject": "plugin::users-permissions.user",
+      "properties": {},
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "aw7rdtx5drgctla56z0h01pf",
+      "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
+      "subject": "plugin::users-permissions.user",
+      "properties": {
+        "fields": [
+          "username",
+          "email",
+          "provider",
+          "password",
+          "resetPasswordToken",
+          "confirmationToken",
+          "confirmed",
+          "blocked",
+          "role"
+        ]
+      },
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "wfox67xuno4p2vaz7xnbe60k",
+      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
+      "subject": "plugin::users-permissions.user",
+      "properties": {
+        "fields": [
+          "username",
+          "email",
+          "provider",
+          "password",
+          "resetPasswordToken",
+          "confirmationToken",
+          "confirmed",
+          "blocked",
+          "role"
+        ]
+      },
+      "conditions": [],
+      "locale": null
+    },
+    {
       "documentId": "a22yiz51zayz9e2w8f7ueq96",
       "action": "plugin::content-manager.single-types.configure-view",
       "actionParameters": {},
@@ -1090,6 +1180,24 @@
       "locale": null
     },
     {
+      "documentId": "nadu2vc2slwx628mhzzc2uxx",
+      "action": "plugin::strapi-tiptap-editor.settings.read",
+      "actionParameters": {},
+      "subject": null,
+      "properties": {},
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "ksaqg46f8bvc27ucglhzgebt",
+      "action": "plugin::strapi-tiptap-editor.settings.update",
+      "actionParameters": {},
+      "subject": null,
+      "properties": {},
+      "conditions": [],
+      "locale": null
+    },
+    {
       "documentId": "s8if9ltto4vjbfhyfqx5nkc1",
       "action": "plugin::upload.assets.copy-link",
       "actionParameters": {},
@@ -1146,6 +1254,96 @@
     {
       "documentId": "v4vcs9oelcjpslnzsg247tr9",
       "action": "plugin::upload.settings.read",
+      "actionParameters": {},
+      "subject": null,
+      "properties": {},
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "sv30fuh3o9pcwho5vn30v0tq",
+      "action": "plugin::users-permissions.advanced-settings.read",
+      "actionParameters": {},
+      "subject": null,
+      "properties": {},
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "ajl7qigujwrxszohnztuzbwt",
+      "action": "plugin::users-permissions.advanced-settings.update",
+      "actionParameters": {},
+      "subject": null,
+      "properties": {},
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "hkjcn73d42c9kg5lvzhycqum",
+      "action": "plugin::users-permissions.email-templates.read",
+      "actionParameters": {},
+      "subject": null,
+      "properties": {},
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "abmng7301eu8z1xt7xrs46vp",
+      "action": "plugin::users-permissions.email-templates.update",
+      "actionParameters": {},
+      "subject": null,
+      "properties": {},
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "ix6lm226kpbpfmsbnp0vfqxt",
+      "action": "plugin::users-permissions.providers.read",
+      "actionParameters": {},
+      "subject": null,
+      "properties": {},
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "hd7qxqcscnt8vmhwv7r7ns1x",
+      "action": "plugin::users-permissions.providers.update",
+      "actionParameters": {},
+      "subject": null,
+      "properties": {},
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "aengvnsntmx1hs8iukxeprpi",
+      "action": "plugin::users-permissions.roles.create",
+      "actionParameters": {},
+      "subject": null,
+      "properties": {},
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "ssz8f3grnhaulcc89ybrptbp",
+      "action": "plugin::users-permissions.roles.delete",
+      "actionParameters": {},
+      "subject": null,
+      "properties": {},
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "cvh8r5rsois3oe57yhwepl6c",
+      "action": "plugin::users-permissions.roles.read",
+      "actionParameters": {},
+      "subject": null,
+      "properties": {},
+      "conditions": [],
+      "locale": null
+    },
+    {
+      "documentId": "cerm9bqm82abxakadtyg54f8",
+      "action": "plugin::users-permissions.roles.update",
       "actionParameters": {},
       "subject": null,
       "properties": {},

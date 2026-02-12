@@ -33,10 +33,7 @@
           "localized": true
         }
       },
-      "customField": "plugin::ckeditor5.CKEditor",
-      "options": {
-        "preset": "defaultHtml"
-      }
+      "customField": "plugin::strapi-tiptap-editor.strapi-tiptap-editor"
     },
     "keywords": {
       "type": "text"

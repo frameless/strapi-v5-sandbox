@@ -4,30 +4,33 @@
   "info": {
     "singularName": "price",
     "pluralName": "prices",
-    "displayName": "Price",
-    "description": ""
+    "displayName": "price"
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
+    "title": {
+      "type": "string"
+    },
     "price": {
       "type": "component",
-      "repeatable": true,
-      "pluginOptions": {},
-      "component": "components.price"
-    },
-    "title": {
-      "type": "string",
-      "unique": true,
-      "required": true
+      "component": "components.price",
+      "repeatable": true
     },
     "products": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::product.product",
       "mappedBy": "price"
+    },
+    "uuid": {
+      "type": "customField",
+      "customField": "plugin::strapi-advanced-uuid.uuid",
+      "options": {
+        "disable-regenerate": true
+      }
     }
   }
 }

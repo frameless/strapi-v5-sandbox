@@ -1,0 +1,69 @@
+{
+  "documentId": "s01s7cuqv9xbwq31rsg8a8l8",
+  "name": "Public",
+  "description": "Default role given to unauthenticated user.",
+  "type": "public",
+  "locale": null,
+  "permissions": [
+    {
+      "documentId": "oab34xc2vjlkf8vnm5wfh5od",
+      "action": "api::contact-information-public.contact-information-public.find",
+      "locale": null
+    },
+    {
+      "documentId": "xeypnbc6gb8k6m3zu2shahhh",
+      "action": "api::contact-information-public.contact-information-public.findOne",
+      "locale": null
+    },
+    {
+      "documentId": "bhvqz3zu6cvlykkmmjl94xff",
+      "action": "api::product.product.find",
+      "locale": null
+    },
+    {
+      "documentId": "oivycwht5o1n7qt64994y4xl",
+      "action": "api::product.product.findOne",
+      "locale": null
+    },
+    {
+      "documentId": "dwm9a0jbwn20vshj9fjiiy8p",
+      "action": "plugin::users-permissions.auth.callback",
+      "locale": null
+    },
+    {
+      "documentId": "wyhm1y36x07du8el07gzqnh7",
+      "action": "plugin::users-permissions.auth.connect",
+      "locale": null
+    },
+    {
+      "documentId": "a960mx6h3aa19qt76fwwo2vl",
+      "action": "plugin::users-permissions.auth.emailConfirmation",
+      "locale": null
+    },
+    {
+      "documentId": "zigwj4pk2hv4v292cf177o1q",
+      "action": "plugin::users-permissions.auth.forgotPassword",
+      "locale": null
+    },
+    {
+      "documentId": "jttapd68cgywkgxrldbq5aar",
+      "action": "plugin::users-permissions.auth.refresh",
+      "locale": null
+    },
+    {
+      "documentId": "njwn19w6pgx3jq0rnld7qwxo",
+      "action": "plugin::users-permissions.auth.register",
+      "locale": null
+    },
+    {
+      "documentId": "ug1tbyk9a4c1kf31301f0ixh",
+      "action": "plugin::users-permissions.auth.resetPassword",
+      "locale": null
+    },
+    {
+      "documentId": "ea1rb3m9357le12lshnmv714",
+      "action": "plugin::users-permissions.auth.sendEmailConfirmation",
+      "locale": null
+    }
+  ]
+}
