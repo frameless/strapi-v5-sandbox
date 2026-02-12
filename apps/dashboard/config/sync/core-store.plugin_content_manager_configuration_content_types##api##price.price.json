@@ -19,20 +19,6 @@
           "sortable": true
         }
       },
-      "price": {
-        "edit": {
-          "label": "price",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "price",
-          "searchable": false,
-          "sortable": false
-        }
-      },
       "title": {
         "edit": {
           "label": "title",
@@ -45,6 +31,20 @@
           "label": "title",
           "searchable": true,
           "sortable": true
+        }
+      },
+      "price": {
+        "edit": {
+          "label": "price",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "price",
+          "searchable": false,
+          "sortable": false
         }
       },
       "products": {
@@ -60,6 +60,20 @@
           "label": "products",
           "searchable": false,
           "sortable": false
+        }
+      },
+      "uuid": {
+        "edit": {
+          "label": "uuid",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "uuid",
+          "searchable": true,
+          "sortable": true
         }
       },
       "createdAt": {
@@ -132,11 +146,17 @@
     "layouts": {
       "list": [
         "id",
-        "price",
         "title",
-        "products"
+        "price",
+        "createdAt"
       ],
       "edit": [
+        [
+          {
+            "name": "title",
+            "size": 6
+          }
+        ],
         [
           {
             "name": "price",
@@ -145,11 +165,11 @@
         ],
         [
           {
-            "name": "title",
+            "name": "products",
             "size": 6
           },
           {
-            "name": "products",
+            "name": "uuid",
             "size": 6
           }
         ]

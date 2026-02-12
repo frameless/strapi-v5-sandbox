@@ -75,21 +75,6 @@
           "sortable": false
         }
       },
-      "price": {
-        "edit": {
-          "label": "price",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true,
-          "mainField": "title"
-        },
-        "list": {
-          "label": "price",
-          "searchable": true,
-          "sortable": true
-        }
-      },
       "metaTags": {
         "edit": {
           "label": "metaTags",
@@ -130,6 +115,21 @@
         },
         "list": {
           "label": "contact_information_public",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "price": {
+        "edit": {
+          "label": "price",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "title"
+        },
+        "list": {
+          "label": "price",
           "searchable": true,
           "sortable": true
         }
@@ -233,12 +233,6 @@
         ],
         [
           {
-            "name": "price",
-            "size": 6
-          }
-        ],
-        [
-          {
             "name": "metaTags",
             "size": 12
           }
@@ -250,6 +244,12 @@
           },
           {
             "name": "contact_information_public",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "price",
             "size": 6
           }
         ]

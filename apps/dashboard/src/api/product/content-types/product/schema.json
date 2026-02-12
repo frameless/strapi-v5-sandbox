@@ -61,12 +61,6 @@
       ],
       "required": false
     },
-    "price": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::price.price",
-      "inversedBy": "products"
-    },
     "metaTags": {
       "type": "component",
       "pluginOptions": {
@@ -87,6 +81,12 @@
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::contact-information-public.contact-information-public",
+      "inversedBy": "products"
+    },
+    "price": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::price.price",
       "inversedBy": "products"
     }
   }

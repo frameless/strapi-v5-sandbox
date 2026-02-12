@@ -47,6 +47,20 @@
           "sortable": true
         }
       },
+      "label": {
+        "edit": {
+          "label": "label",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "label",
+          "searchable": true,
+          "sortable": true
+        }
+      },
       "documentId": {
         "edit": {},
         "list": {
@@ -59,7 +73,8 @@
     "layouts": {
       "list": [
         "id",
-        "kennisartikelCategorie"
+        "kennisartikelCategorie",
+        "label"
       ],
       "edit": [
         [
@@ -71,6 +86,10 @@
         [
           {
             "name": "kennisartikelCategorie",
+            "size": 6
+          },
+          {
+            "name": "label",
             "size": 6
           }
         ]

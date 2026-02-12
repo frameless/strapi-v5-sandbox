@@ -13,13 +13,11 @@
           "localized": true
         }
       },
-      "customField": "plugin::ckeditor5.CKEditor",
-      "options": {
-        "preset": "defaultHtml"
-      }
+      "customField": "plugin::strapi-tiptap-editor.strapi-tiptap-editor"
     },
     "kennisartikelCategorie": {
       "type": "enumeration",
+      "required": false,
       "enum": [
         "inleiding",
         "aanvraag",
@@ -31,8 +29,11 @@
         "wat te doen bij geen reactie",
         "bijzonderheden",
         "contact"
-      ],
-      "required": false
+      ]
+    },
+    "label": {
+      "type": "customField",
+      "customField": "plugin::strapi-tiptap-editor.richtext-preview"
     }
   }
 }
