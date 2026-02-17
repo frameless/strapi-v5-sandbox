@@ -51,6 +51,13 @@ export default ({ env }) => ({
       },
     },
   },
+  'flo-legal-embed': {
+    enabled: true,
+    config: {
+      api_url: env('FLO_LEGAL_API_URL'),
+      token: env('FLO_LEGAL_API_TOKEN'),
+    },
+  },
   prometheus: {
     enabled: true,
     config: {

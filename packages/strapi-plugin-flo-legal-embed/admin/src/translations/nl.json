@@ -1,0 +1,6 @@
+{
+  "flo-legal-embed.label": "Kies een ingebed Flo Legal formulier",
+  "flo-legal-embed.description": "Slaat de unieke identificatie van het geselecteerde formulier op in de database.",
+  "flo-legal-embed.disabled.placeholder": "Dit veld is uitgeschakeld totdat de vereiste instellingen zijn geconfigureerd.",
+  "flo-legal-embed.disabled.hint": "Zorg ervoor dat FLO_LEGAL_API_URL en FLO_LEGAL_API_TOKEN correct zijn geconfigureerd om dit veld in te schakelen."
+}
