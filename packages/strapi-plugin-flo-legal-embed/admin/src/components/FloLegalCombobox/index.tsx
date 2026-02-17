@@ -1,5 +1,4 @@
 import { Combobox, ComboboxOption, Field, TextInput } from '@strapi/design-system';
-import { useEffect, useState } from 'react';
 import { useIntl } from 'react-intl';
 
 import usePluginConfig from '../../hooks/use-plugin-config';
@@ -29,7 +28,7 @@ export interface FloLegalFieldInputProps {
   onFocus: () => void;
 }
 
-export const FloLegalField = ({
+export const FloLegalCombobox = ({
   value,
   onChange,
   name,
@@ -41,34 +40,9 @@ export const FloLegalField = ({
   label,
   hint,
 }: FloLegalFieldInputProps) => {
-  const { config, isLoading } = usePluginConfig();
-  const [checks, setChecks] = useState<FloLegalDataParams[]>([]);
+  const { config, checks, isLoading } = usePluginConfig();
 
   const { formatMessage } = useIntl();
-  const apiUrl = config?.api_url?.endsWith('/') ? `${config.api_url}checks` : `${config?.api_url}/checks`;
-
-  useEffect(() => {
-    if (!config?.api_url || !config?.token) return;
-
-    const fetchChecks = async () => {
-      try {
-        const response = await fetch(apiUrl, {
-          headers: {
-            'Content-Type': 'application/json',
-            Accept: 'application/json',
-            Authorization: `Token ${config.token}`,
-          },
-        });
-
-        const data = await response.json();
-        setChecks(data?.checks || []);
-      } catch (err) {
-        console.error(err);
-      }
-    };
-
-    fetchChecks();
-  }, [config, apiUrl]);
 
   const generateFloLegalData = (params: FloLegalDataParams) => new URLSearchParams({ ...params }).toString();
 

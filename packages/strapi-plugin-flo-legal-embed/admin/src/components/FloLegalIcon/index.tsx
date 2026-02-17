@@ -1,7 +1,7 @@
 import { Flex } from '@strapi/design-system';
 import { ManyWays } from '@strapi/icons';
 
-const ComboboxIcon = () => (
+export const FloLegalIcon = () => (
   <Flex
     justifyContent="center"
     alignItems="center"
@@ -17,5 +17,3 @@ const ComboboxIcon = () => (
     <ManyWays color="primary600" />
   </Flex>
 );
-
-export default ComboboxIcon;

@@ -1,6 +1,6 @@
 import type { StrapiApp } from '@strapi/strapi/admin';
 
-import ComboboxIcon from './components/ComboboxIcon';
+import { FloLegalIcon } from './components/FloLegalIcon';
 import { PLUGIN_ID } from './pluginId';
 import reducers from './reducers';
 import { getTranslation } from './utils/getTranslation';
@@ -24,7 +24,7 @@ export default {
       name: PLUGIN_ID,
       pluginId: PLUGIN_ID,
       type: 'string',
-      icon: ComboboxIcon,
+      icon: FloLegalIcon,
       intlLabel: {
         id: getTranslation('flo-legal-embed.label'),
         defaultMessage: 'Choose an Embedded Flo Legal Form',
@@ -35,9 +35,9 @@ export default {
       },
       components: {
         Input: async () => {
-          const { FloLegalField } = await import('./components/CustomCombobox');
+          const { FloLegalCombobox } = await import('./components/FloLegalCombobox');
 
-          return { default: FloLegalField as React.ComponentType };
+          return { default: FloLegalCombobox as React.ComponentType };
         },
       },
       options: {
