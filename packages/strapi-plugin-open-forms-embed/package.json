@@ -1,14 +1,14 @@
 {
   "name": "@frameless/strapi-plugin-open-forms-embed",
   "version": "0.0.0",
-  "description": "A strapi custom field for selecting uniform product name",
+  "description": "A Strapi custom field plugin that lets editors search and select OpenForms from a remote OpenForms API using a combobox interface.",
   "keywords": [],
   "private": false,
   "strapi": {
     "name": "open-forms-embed",
-    "description": "Select uniform product name custom field",
+    "description": "A Strapi custom field plugin that lets editors search and select OpenForms from a remote OpenForms API using a combobox interface.",
     "kind": "plugin",
-    "displayName": "Select uniform product name"
+    "displayName": "OpenForms Field"
   },
   "repository": {
     "type": "git+ssh",
@@ -16,8 +16,9 @@
     "directory": "packages/strapi-plugin-open-forms-embed"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/",
-    "access": "public"
+    "registry": "https://registry.npmjs.org",
+    "access": "public",
+    "provenance": true
   },
   "files": [
     "dist"

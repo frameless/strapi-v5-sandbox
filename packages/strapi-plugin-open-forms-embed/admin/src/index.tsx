@@ -1,3 +1,5 @@
+import type { StrapiApp } from '@strapi/strapi/admin';
+
 import ComboboxIcon from './components/ComboboxIcon';
 import { PLUGIN_ID } from './pluginId';
 import reducers from './reducers';
@@ -16,12 +18,12 @@ const prefixPluginTranslations = (translate: TranslateOptions, pluginId: string)
 };
 
 export default {
-  register(app: any) {
+  register(app: StrapiApp) {
     app.addReducers(reducers);
 
     app.customFields.register({
       name: PLUGIN_ID,
-      id: PLUGIN_ID,
+      pluginId: PLUGIN_ID,
       type: 'string',
       icon: ComboboxIcon,
       intlLabel: {
@@ -34,7 +36,11 @@ export default {
           'Upon selecting a form, its unique identifier (UUID) will be stored in the database for future reference.',
       },
       components: {
-        Input: async () => import('./components/CustomCombobox'),
+        Input: async () => {
+          const { OpenFormsField } = await import('./components/CustomCombobox');
+
+          return { default: OpenFormsField as React.ComponentType };
+        },
       },
       options: {
         advanced: [

@@ -27,6 +27,15 @@
       "enum": ["primary-action-button", "secondary-action-button", "magenta"],
       "default": "primary-action-button"
     },
+    "openFormsEmbed": {
+      "type": "customField",
+      "customField": "plugin::open-forms-embed.open-forms-embed",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
     "kennisartikelCategorie": {
       "type": "enumeration",
       "enum": [
