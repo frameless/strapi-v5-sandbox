@@ -1,6 +1,8 @@
 import { Combobox, ComboboxOption, Field, TextInput } from '@strapi/design-system';
 import { useEffect, useState } from 'react';
+import { useIntl } from 'react-intl';
 
+import { getTranslation } from '../../utils';
 import usePluginConfig from '../../hooks/use-plugin-config';
 
 type OpenFormsDataParams = {
@@ -45,6 +47,7 @@ export const OpenFormsField = ({
   const [isLoading, setIsLoading] = useState(false);
 
   const { config } = usePluginConfig();
+  const { formatMessage } = useIntl();
 
   const apiUrl = config?.api_url?.endsWith('/') ? `${config.api_url}public/forms` : `${config?.api_url}/public/forms`;
 
@@ -97,11 +100,23 @@ export const OpenFormsField = ({
       <Field.Root
         name={name}
         error={error}
-        hint="Configure OPEN_FORMS_API_URL and OPEN_FORMS_API_TOKEN to enable this field."
+        hint={formatMessage({
+          id: getTranslation('open-forms-embed.disabled.hint'),
+          defaultMessage:
+            'Please ensure the required settings (OPEN_FORMS_API_URL and OPEN_FORMS_API_TOKEN) are properly configured to enable this field.',
+        })}
       >
         <Field.Label>{label}</Field.Label>
 
-        <TextInput name={name} value="" placeholder="Open Forms is not configured" disabled />
+        <TextInput
+          name={name}
+          value=""
+          placeholder={formatMessage({
+            id: getTranslation('open-forms-embed.disabled.placeholder'),
+            defaultMessage: 'This field is disabled until necessary settings are configured.',
+          })}
+          disabled
+        />
 
         <Field.Hint />
         <Field.Error />
