@@ -1,0 +1,46 @@
+{
+  "name": "@frameless/catalogi-data",
+  "version": "0.0.0",
+  "private": false,
+  "main": "./dist/gemeente.json",
+  "keywords": [
+    "catalogi",
+    "data",
+    "gemeenten",
+    "catalogus"
+  ],
+  "author": "@Frameless",
+  "description": "A Nodejs application that convert the catalogi XML to JSON formate",
+  "license": "EUPL-1.2",
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git+ssh",
+    "url": "git@github.com:frameless/strapi-v5-extensions.git",
+    "directory": "packages/catalogi-data"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public",
+    "provenance": true
+  },
+  "scripts": {
+    "prebuild": "npm run tsc",
+    "build": "node dist/index.js",
+    "tsc": "tsc",
+    "lint-build": "tsc --noEmit --project tsconfig.json"
+  },
+  "peerDependencies": {
+    "xmlbuilder2": ">=3.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "24.10.9",
+    "xmlbuilder2": "4.0.3",
+    "rimraf": "6.1.3"
+  },
+  "engines": {
+    "node": ">=22.0.0 <25",
+    "pnpm": ">=10.0.0"
+  }
+}
